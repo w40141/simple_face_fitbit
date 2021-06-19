@@ -1,12 +1,14 @@
-.defaultText {
-  font-size: 32;
-  font-family: System-Regular;
-  font-weight: regular;
-  text-length: 32;
+#myLabel {
 }
 
-#background {
-  width: 100%;
-  height: 100%;
-  fill: white;
+text {
+  font-size: 25;
+  font-family: SevilleSharp-Bold;
+  fill: #ffffff;
+}
+
+.cycle-item text {
+  x: 50%;
+  y: 35%;
+  text-anchor: middle;
 }

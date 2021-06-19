@@ -1,28 +1,26 @@
 {
-  "name": "simple_face_fitbit",
-  "version": "0.1.0",
-  "private": true,
-  "license": "UNLICENSED",
   "devDependencies": {
-    "@fitbit/sdk": "~5.0.2",
-    "@fitbit/sdk-cli": "^1.7.3"
+    "@fitbit/sdk": "~5.0.0"
   },
   "fitbit": {
-    "appUUID": "6b0a89a3-30fe-4c35-8de1-e85b5a8d3c01",
+    "appUUID": "75e94b5c-451d-4264-95a6-8d3474ca05a6",
     "appType": "clockface",
-    "appDisplayName": "Simple Face Fitbit",
+    "appDisplayName": "test_digital_clock",
     "iconFile": "resources/icon.png",
-    "wipeColor": "#ffffff",
-    "requestedPermissions": [],
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity"
+    ],
     "buildTargets": [
       "atlas",
       "vulcan"
     ],
-    "i18n": {},
+    "i18n": {
+      "en-US": {
+        "name": "test_digital_clock"
+      }
+    },
     "defaultLanguage": "en-US"
-  },
-  "scripts": {
-    "build": "fitbit-build",
-    "debug": "fitbit"
   }
 }
